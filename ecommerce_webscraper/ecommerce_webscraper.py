@@ -446,62 +446,6 @@ df = pd.DataFrame(
                   }
                  )
 
-# # Altera o tipo do produto RTX 4060 Ti
-# mask_4060ti = df['ds_produto'].str.lower().str.replace('4060ti', '4060 ti').str.contains('4060 ti')
-# df.loc[mask_4060ti, 'nm_produto'] = 'RTX 4060 Ti'
-
-# # Altera o tipo do produto RTX 4070 Ti
-# mask_4070ti = df['ds_produto'].str.lower().str.replace('4070ti', '4070 ti').str.contains('4070 ti')
-# df.loc[mask_4070ti, 'nm_produto'] = 'RTX 4070 Ti'
-
-# # Altera o tipo do produto RTX 4070 Super
-# mask_4070s = df['ds_produto'].str.lower().str.replace('4070super', '4070 super').str.contains('4070 super')
-# df.loc[mask_4070s, 'nm_produto'] = 'RTX 4070 Super'
-
-# # Altera o tipo do produto RTX 4070 Ti Super
-# mask_4070ti_s = df['ds_produto'].str.lower().str.replace('4070ti', '4070 ti').str.contains('4070 ti super')
-# df.loc[mask_4070ti_s, 'nm_produto'] = 'RTX 4070 Ti Super'
-
-# # Altera o tipo do produto RTX 5070 Ti
-# mask_5070ti = df['ds_produto'].str.lower().str.replace('5070ti', '5070 ti').str.contains('5070 ti')
-# df.loc[mask_5070ti, 'nm_produto'] = 'RTX 5070 Ti'
-
-# # Altera o tipo do produto RX 9070 XT
-# mask_9070xt = df['ds_produto'].str.lower().str.replace('9070xt', '9070 xt').str.contains('9070 xt')
-# df.loc[mask_9070xt, 'nm_produto'] = 'RX 9070 XT'
-
-# # Altera o tipo do produto Ryzen 7 7600X
-# mask_7600X = (df['ds_produto'].str.lower().str.contains('7600x')) & (df['nm_produto'].str.contains('Ryzen 5 7600'))
-# df.loc[mask_7600X, 'nm_produto'] = 'Ryzen 5 7600X'
-
-# # Altera o tipo do produto Ryzen 7 7700X
-# mask_7700X = (df['ds_produto'].str.lower().str.contains('7700x')) & (df['nm_produto'].str.contains('Ryzen 7 7700'))
-# df.loc[mask_7700X, 'nm_produto'] = 'Ryzen 7 7700X'
-
-# # Altera o tipo do produto Ryzen 7 7900X3D
-# mask_7900X3D = (df['ds_produto'].str.lower().str.contains('7900x3d')) & (df['nm_produto'].str.contains('Ryzen 9 7900'))
-# df.loc[mask_7900X3D, 'nm_produto'] = 'Ryzen 9 7900X3D'
-
-# # Altera o tipo do produto Ryzen 7 7950X3D
-# mask_7950X3D = (df['ds_produto'].str.lower().str.contains('7950x3d')) & (df['nm_produto'].str.contains('Ryzen 9 7950'))
-# df.loc[mask_7950X3D, 'nm_produto'] = 'Ryzen 9 7950X3D'
-
-# # Altera o tipo do produto Ryzen 7 7600X
-# mask_9600X = (df['ds_produto'].str.lower().str.contains('9600x')) & (df['nm_produto'].str.contains('Ryzen 5 9600'))
-# df.loc[mask_9600X, 'nm_produto'] = 'Ryzen 5 9600X'
-
-# # Altera o tipo do produto Ryzen 7 7700X
-# mask_9700X = (df['ds_produto'].str.lower().str.contains('9700x')) & (df['nm_produto'].str.contains('Ryzen 7 9700'))
-# df.loc[mask_9700X, 'nm_produto'] = 'Ryzen 7 9700X'
-
-# # Altera o tipo do produto Ryzen 7 7900X3D
-# mask_9900X3D = (df['ds_produto'].str.lower().str.contains('9900x3d')) & (df['nm_produto'].str.contains('Ryzen 9 9900'))
-# df.loc[mask_9900X3D, 'nm_produto'] = 'Ryzen 9 9900X3D'
-
-# # Altera o tipo do produto Ryzen 7 7950X3D
-# mask_9950X3D = (df['ds_produto'].str.lower().str.contains('9950x3d')) & (df['nm_produto'].str.contains('Ryzen 9 9950'))
-# df.loc[mask_9950X3D, 'nm_produto'] = 'Ryzen 9 9950X3D'
-
 # Altera alguns produtos para sua versão alternativa, se existir
 def corrigir_produtos(df):
     # GPUs - encontra o termo na descrição
