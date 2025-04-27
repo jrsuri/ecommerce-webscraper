@@ -1,0 +1,6 @@
+numpy==1.26.4
+pandas==1.5.3
+beautifulsoup4==4.12.3
+selenium==4.27.1
+tqdm==4.67.1
+SQLAlchemy==1.4.52
